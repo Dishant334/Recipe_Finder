@@ -1,7 +1,7 @@
 //context API
 //useContext hooks
 
-//useContext(warehouse)
+//CreateContext(warehouse)
 //Provider  (delivery boy)
 //Consumer /hard so introduced-> (useContext()) ->who get the function(who get the things)
 import React, { useState,useContext,useEffect } from "react";
