@@ -1,0 +1,92 @@
+/* SingleRecipe.css */
+
+.Single {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+}
+
+.Single h2 {
+  font-size: 36px;
+  margin: 20px 0;
+  text-align: center;
+  color: #2c3e50;
+}
+
+.Single h3 {
+  font-size: 24px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #34495e;
+  border-bottom: 2px solid #e67e22;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.Single img.image {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin: 20px 0;
+  transition: transform 0.3s ease;
+}
+
+.Single img.image:hover {
+  transform: scale(1.05);
+}
+
+.Single ul {
+  list-style: disc inside;
+  margin: 10px 0;
+  padding-left: 20px;
+  font-size: 18px;
+}
+
+.Single p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.Single a {
+  color: #e67e22;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.Single a:hover {
+  text-decoration: underline;
+}
+
+.loading {
+  text-align: center;
+  font-size: 28px;
+  padding: 100px 0;
+  font-family: 'Roboto', sans-serif;
+  color: #e67e22;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .Single {
+    padding: 15px;
+  }
+
+  .Single h2 {
+    font-size: 28px;
+  }
+
+  .Single h3 {
+    font-size: 20px;
+  }
+
+  .Single ul, .Single p {
+    font-size: 16px;
+  }
+}
