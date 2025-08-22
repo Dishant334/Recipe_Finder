@@ -1,9 +1,10 @@
-.header{
-    display: flex;
-    height: 90px;
-    background-color:#FEE8D9 ;
-    align-items: center;
-    justify-content: space-between;
+.header {
+  display: flex;
+  height: 90px;
+  background: linear-gradient(135deg, #ffecd2, #fcb69f);
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
 }
 .headerImg{
     height: 90px;
@@ -30,4 +31,15 @@
 
 @keyframes blink {
   50% { border-color: transparent; }
+}
+
+@media (max-width: 600px) {  
+  .header {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+  }
+  .Text {
+    font-size: 20px;
+  }
 }

@@ -1,13 +1,28 @@
-.Search{
-    height:50rem;
-    display: flex;
-    justify-content: center;
-    align-items: end;
-  
-    background-image:url(./assets/Photo6.jpg);
-    background-size: cover;
-    background-position: center;
+.Search {
+  position: relative;
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url(./assets/Photo6.jpg);
+  background-size: cover;
+  background-position: center;
 }
+
+.Search::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+}
+
+.Search > div {
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+
 .Sear {
   font-size: 50px;
   color: #444;
@@ -19,4 +34,17 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 768px) {
+  .Sear {
+    font-size: 32px;
+  }
+  form {
+    flex-direction: column;
+    width: 90%;
+  }
+  input, button {
+    width: 100% !important;
+  }
 }

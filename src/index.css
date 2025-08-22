@@ -3,3 +3,13 @@
   padding: 0;
   box-sizing: border-box; /* keeps widths/paddings predictable */
 }
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+html {
+  scroll-behavior: smooth;
+}
